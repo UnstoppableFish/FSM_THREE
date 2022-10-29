@@ -1,0 +1,39 @@
+|FSM_THREE
+rstn => NEXT.IDLE.OUTPUTSELECT
+rstn => NEXT.RD_S1.OUTPUTSELECT
+rstn => NEXT.RD_S2.OUTPUTSELECT
+rstn => NEXT.WR_S1.OUTPUTSELECT
+rstn => NEXT.WR_S2.OUTPUTSELECT
+rstn => out[0]~reg0.ACLR
+rstn => out[1]~reg0.ACLR
+rstn => out[2]~reg0.ACLR
+rstn => state~3.DATAIN
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => state~1.DATAIN
+sel[0] => NEXT.OUTPUTSELECT
+sel[0] => NEXT.OUTPUTSELECT
+sel[0] => NEXT.OUTPUTSELECT
+sel[0] => NEXT.OUTPUTSELECT
+sel[0] => NEXT.OUTPUTSELECT
+sel[0] => out.OUTPUTSELECT
+sel[0] => Selector5.IN4
+sel[1] => NEXT.OUTPUTSELECT
+sel[1] => NEXT.OUTPUTSELECT
+sel[1] => NEXT.OUTPUTSELECT
+sel[1] => NEXT.OUTPUTSELECT
+sel[1] => NEXT.OUTPUTSELECT
+sel[1] => Selector3.IN4
+sel[1] => Selector2.IN3
+sel[1] => Selector5.IN3
+sel[1] => out.DATAA
+sel[1] => Selector6.IN4
+sel[1] => Selector4.IN1
+sel[1] => Selector0.IN4
+sel[1] => Selector1.IN3
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
